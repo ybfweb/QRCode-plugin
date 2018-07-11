@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>QRCode-plugin</title>
+    <style type="text/css">
+        .title-box{
+            width: 200px;
+            margin: auto;
+            padding-bottom: 20px;
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .box {
+            width: 300px;
+            padding: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #qr-img {
+            height: 200px;
+            width: 200px;
+            margin: auto;
+        }
+
+        .input-box {
+            width: 200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            color: #333;
+            padding: 20px 0 0 0;
+            justify-content: center;
+        }
+        .input-box label{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #url-text {
+            border: 1px solid #666;
+            border-radius: 4px;
+            padding: 5px;
+            box-shadow: 0 0 10px #666;
+            font-size: 16px;
+        }
+
+        #url-text:focus {
+            border-color: red;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="title-box">用手机扫码在手机上查看</div>
+    <div id="qr-img"></div>
+    <div id="text"></div>
+    <div class="input-box">
+        <label>TEXT</label>
+        <textarea rows="3" id="url-text"></textarea>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/qrcode.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
