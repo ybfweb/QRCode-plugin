@@ -4,14 +4,14 @@
   "manifest_version": 2,
   "description": "将chrome地址栏转换成二维码",
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "static/images/icon.png",
     "default_title": "QRCode-plugin",
     "default_popup": "popup.html"
   },
   "icons": {
-    "128": "icon.png",
-    "16": "icon.png",
-    "48": "icon.png"
+    "128": "static/images/icon.png",
+    "16": "static/images/icon.png",
+    "48": "static/images/icon.png"
   },
-  "permissions": [ "tabs", "contextMenus", "http://*/*", "https://*/*" ]
+  "permissions": [ "tabs"]
 }
